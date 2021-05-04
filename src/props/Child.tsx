@@ -13,6 +13,6 @@ export const Child = ({ color }: ChildProps) => {
 
 // Now TS know that it is React comp., not just function like example above
 // React.FC === React.FunctionComponent
-export const ChildAsFC: React.FC<ChildProps> = ({ color }) => {
-  return <div>Color: {color}</div>;
+export const ChildAsFC: React.FC<ChildProps> = ({ color, children }) => {
+  return <div>Color: {color} {children}</div>;
 };

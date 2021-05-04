@@ -1,7 +1,11 @@
-import { Child } from './Child';
+import { ChildAsFC } from './Child';
 
 const Parent = () => {
-  return <Child color="green" />;
+  return (
+    <ChildAsFC color="green">
+      <div>Children content</div>
+    </ChildAsFC>
+  );
 };
 
 export default Parent;
