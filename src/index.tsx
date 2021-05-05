@@ -2,9 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import GuestList from './state/GuestList';
+import UserSearch from './state/UserSearch';
 
 const App = () => {
-  return <GuestList />
+  return (
+    <div>
+      <UserSearch />
+      <GuestList />
+    </div>
+  );
 };
 
 ReactDOM.render(
