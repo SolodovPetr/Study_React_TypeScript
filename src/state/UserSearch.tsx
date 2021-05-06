@@ -4,7 +4,6 @@ const users = [
   { name: 'John', age: 21 },
   { name: 'Alex', age: 22 },
   { name: 'Dave', age: 23 },
-  { name: 'Romeo', age: 24 },
 ];
 
 const UserSearch: React.FC = () => {
@@ -14,7 +13,6 @@ const UserSearch: React.FC = () => {
   const searchHandler = () => {
     const foundUser = users.find((user) => user.name === name);
     setUser(foundUser);
-    console.log(foundUser);
   };
 
   return (
