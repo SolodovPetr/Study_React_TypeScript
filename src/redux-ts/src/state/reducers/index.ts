@@ -6,3 +6,6 @@ const reducers = combineReducers({
 });
 
 export default reducers;
+
+// Root State Type
+export type RootState = ReturnType<typeof reducers>;
