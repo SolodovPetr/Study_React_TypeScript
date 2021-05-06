@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 // import GuestList from './state/GuestList';
 // import UserSearch from './state/UserSearch';
 // import EventComponent from './events/EventComponent';
-import UserSearch from './classes/UserSearch';
+// import UserSearch from './classes/UserSearch';
+import UserSearch from './refs/UserSearch';
 
 const users = [
   { name: 'John', age: 21 },
@@ -15,10 +16,10 @@ const users = [
 const App = () => {
   return (
     <div>
-      {/* <UserSearch />
-      <GuestList />
-      <EventComponent /> */}
-      <UserSearch users={users} />
+      <UserSearch />
+      {/*<GuestList />
+      <EventComponent />
+      <UserSearch users={users} /> */}
     </div>
   );
 };
